@@ -16,10 +16,8 @@ provider "aws" {
   alias      = "new_user"
   region     = "us-east-1"
   assume_role {
-    role_arn = "arn:aws:iam::199360086209:role/terraform_provider_access"
-    # role_arn = "${module.data.test_role1}"
+     role_arn = "${module.data.test_role1}"
   }
-  
   
 }
 
